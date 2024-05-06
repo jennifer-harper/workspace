@@ -1,0 +1,55 @@
+$header-font: 'Montagu Slab', serif;
+$body-font: 'Montagu Slab', serif;
+
+$xs:20px;
+$sm:40px;
+$md:6vw;
+$lg:10vw;
+$xlg:14vw;
+$xxl:20vw;
+
+
+$bp-small: 48em; // 768px
+$bp-medium: 64em; // 1024px
+$bp-large: 85.375em; // 1366px
+$bp-xlarge: 120em; // 1920px
+$bp-xxlarge: 160em; // 2560px
+
+// Media Queries
+$mq-small: "(min-width: #{$bp-small})";
+$mq-medium: "(min-width: #{$bp-medium})";
+$mq-large: "(min-width: #{$bp-large})";
+$mq-xlarge: "(min-width: #{$bp-xlarge})";
+$mq-xxlarge: "(min-width: #{$bp-xxlarge})";
+$mq-retina: "(-webkit-min-device-pixel-ratio: 2),(min-resolution: 192dpi)";
+
+// Font-Size
+$base-font-size: 1em;
+
+// Line-Height
+$base-line-height: 1.5;
+$header-line-height: 1.25;
+
+// Spacing
+$base-spacing: $base-font-size;
+
+// Colors
+$light:#fbf1f1;
+$dark:#000;
+$white:#fff;
+$black: #151515;
+$dark-grey: #242424;
+$grey: #666;
+$base-accent-color: #FC4842;
+$base-font-color: #CCC;
+
+// Transition Settings
+$base-transition-duration: .3s;
+$base-transition-timing: ease-in-out;
+
+// Backgrounds
+$base-background-color: $dark-grey;
+
+$shadow:0 14px 28px rgba(0,0,0,0.15), 0 10px 10px rgba(0,0,0,0.16);
+$text-shadow: 2px 2px 10px rgba(0,0,0,0.25);
+$drop-shadow:drop-shadow( 3px 3px 8px rgba(0, 0, 0, .30));

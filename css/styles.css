@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Montagu+Slab:wght@100;600&display=swap");
+*,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  height: 100%;
+  margin: 0;
+  overflow-x: hidden;
+  background-color: #242424;
+  color: #CCC;
+  font-family: "Montagu Slab", serif;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1.5;
+}
+@media (min-width: 64em) {
+  body {
+    font-size: 1.2em;
+    line-height: 1.8;
+  }
+}
+@media (min-width: 85.375em) {
+  body {
+    font-size: 1.6em;
+  }
+}
+@media (min-width: 120em) {
+  body {
+    font-size: 1.8em;
+  }
+}
+@media (min-width: 160em) {
+  body {
+    font-size: 2em;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 0; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
+
+.overflow-wrapper {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+a {
+  color: #FC4842;
+  transition: color 0.3s ease-in-out;
+  text-decoration: none;
+}
+a:hover, a:focus {
+  color: #fb1710;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+/**
+ * Typography
+ */
+p {
+  margin: 0 0 1em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.25;
+}
+
+img {
+  max-width: 100%;
+}
+
+.bg-img {
+  width: 100%;
+  background-image: url("https://public-619e3.firebaseapp.com/Death-Star/detail_sml.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.detail {
+  height: 0;
+  padding-bottom: 56.25%;
+  margin: 0 0 2em;
+  background-image: url(https://public-619e3.firebaseapp.com/Death-Star/detail_sml.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+@media (min-width: 120em) and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .detail {
+    background-image: url(https://public-619e3.firebaseapp.com/Death-Star/detail_sml@2x.jpg);
+  }
+}
+@media (min-width: 64em) {
+  .detail {
+    background-image: url(https://public-619e3.firebaseapp.com/Death-Star/detail_med.jpg);
+  }
+}
+@media (min-width: 64em) and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .detail {
+    background-image: url(https://public-619e3.firebaseapp.com/Death-Star/detail_med@2x.jpg);
+  }
+}
+@media (min-width: 85.375em) {
+  .detail {
+    background-image: url(https://public-619e3.firebaseapp.com/Death-Star/detail_lrg.jpg);
+  }
+}
+@media (min-width: 85.375em) and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .detail {
+    background-image: url(https://public-619e3.firebaseapp.com/Death-Star/detail_lrg@2x.jpg);
+  }
+}
+@media (min-width: 120em) {
+  .detail {
+    background-image: url(https://public-619e3.firebaseapp.com/Death-Star/detail_xlrg.jpg);
+  }
+}
+@media (min-width: 120em) and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .detail {
+    background-image: url(https://public-619e3.firebaseapp.com/Death-Star/detail_lrg@2x.jpg);
+  }
+}
+
+.box-wrapper {
+  width: 100%;
+  height: 70vw;
+}
+.box-wrapper .media-box {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+.box-wrapper .media-box img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 1px;
+  left: 0;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: 50% 50%;
+  object-position: 50% 50%;
+}
+.box-wrapper .overlay::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  left: 0;
+  top: 0;
+}
+@media (min-width: 64em) {
+  .box-wrapper {
+    height: 100%;
+  }
+}
+
+figure {
+  margin: 0;
+  z-index: 1;
+  width: 100%;
+  position: relative;
+}
+figure svg {
+  width: 100%;
+  z-index: 1;
+}
+
+svg {
+  overflow: visible !important;
+}
+
+.wrapper {
+  margin: 0 4%;
+}
+@media (min-width: 64em) {
+  .wrapper {
+    margin: 0 8%;
+  }
+}
+@media (min-width: 85.375em) {
+  .wrapper {
+    margin: 0 12%;
+  }
+}
+@media (min-width: 120em) {
+  .wrapper {
+    margin: 0 18%;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
